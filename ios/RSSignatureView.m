@@ -47,6 +47,10 @@
 	if ((currOri == UIDeviceOrientationLandscapeLeft) || (currOri == UIDeviceOrientationLandscapeRight)) {
 		ori=0;
 	}
+    if (sign) {
+        CGSize screen = self.bounds.size;
+        [sign setFrame: CGRectMake(0, 0, screen.width, screen.height)];
+    }
 }
 
 - (void)layoutSubviews
