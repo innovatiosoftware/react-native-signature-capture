@@ -86,6 +86,13 @@ class SignatureCapture extends React.Component {
             [],
         );
     }
+    landscapeMode() {
+        UIManager.dispatchViewManagerCommand(
+            ReactNative.findNodeHandle(this),
+            UIManager.getViewManagerConfig('RSSignatureView').Commands.landscapeMode,
+            [],
+        );
+    }
 }
 
 SignatureCapture.propTypes = {
