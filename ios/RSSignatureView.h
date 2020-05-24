@@ -11,5 +11,6 @@
 -(void) onSaveButtonPressed;
 -(void) onClearButtonPressed;
 -(void) saveImage;
+-(void) landscapeMode;
 -(void) erase;
 @end
